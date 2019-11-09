@@ -34,7 +34,7 @@ class BankAccount
     self.status = "closed"
   end
 
-  def transfer(money)
+  def deduct(money)
     self.balance -= money
   end
 end
