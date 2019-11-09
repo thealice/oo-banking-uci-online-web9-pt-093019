@@ -15,6 +15,6 @@ class Transfer
 
   def execute_transaction
     self.receiver.deposit(self.amount)
-    self.sender.dedcut(self.amount)
+    self.sender.deduct(self.amount)
   end
 end
