@@ -29,5 +29,8 @@ class Transfer
       receiver.deduct(amount)
       sender.desposit(amount)
       self.status = "reversed"
+    else
+      "Cannot reverse transfer."
+    end
   end
 end
