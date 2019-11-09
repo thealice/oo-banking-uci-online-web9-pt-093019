@@ -10,7 +10,7 @@ class Transfer
   end
 
   def valid?
-        binding.pry
+
     sender_acct = BankAccount.all.detect {|account| account.name == sender.name}
     receiver_acct = BankAccount.all.detect {|account| account.name == receiver.name}
 
