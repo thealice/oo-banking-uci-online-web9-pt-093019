@@ -11,6 +11,7 @@ class Transfer
   def valid?
     sender_acct = BankAccount.all.detect {|account| account.name == sender}.valid?
     receiver_acct = BankAccount.all.detect {|account| account.name == receiver}.valid?
+    binding.pry
     sender_acct && receiver_acct
   end
 end
