@@ -19,7 +19,7 @@ class Transfer
       self.sender.deduct(self.amount)
       self.status = "complete"
     else
-      "Transaction failed"
+      "Transaction rejected. Please check your account balance."
     end
   end
 end
