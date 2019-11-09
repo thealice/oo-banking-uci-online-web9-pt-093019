@@ -13,7 +13,9 @@ class BankAccount
   def self.all 
     @@all
   end
-
+  def save
+    @@all << self
+  end
   def deposit(money)
     self.balance += money
   end
