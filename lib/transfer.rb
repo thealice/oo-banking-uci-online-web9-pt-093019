@@ -25,7 +25,7 @@ class Transfer
   end
 
   def reverse_transfer
-    if self.status = "complete"
+    if valid? && receiver.balance > amount && self.status == "complete"
       receiver.deduct(amount)
       sender.deposit(amount)
       self.status = "reversed"
