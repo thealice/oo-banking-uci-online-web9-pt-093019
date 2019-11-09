@@ -20,5 +20,6 @@ class Transfer
       self.status = "complete"
     else
       "Transaction failed"
+    end
   end
 end
