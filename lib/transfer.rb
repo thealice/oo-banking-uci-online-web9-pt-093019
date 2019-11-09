@@ -10,10 +10,8 @@ class Transfer
   end
 
   def valid?
-
-    sender_acct = BankAccount.all.detect {|account| account.name == sender.name}
-    receiver_acct = BankAccount.all.detect {|account| account.name == receiver.name}
-
+    # sender_acct = BankAccount.all.detect {|account| account.name == sender.name}
+    # receiver_acct = BankAccount.all.detect {|account| account.name == receiver.name}
     sender.valid? && receiver.valid?
   end
 end
