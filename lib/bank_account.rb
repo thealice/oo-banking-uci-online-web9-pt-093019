@@ -33,4 +33,8 @@ class BankAccount
   def close_account
     self.status = "closed"
   end
+
+  def transfer(money)
+    self.balance -= money
+  end
 end
